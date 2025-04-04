@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bib446hrkyssj"]
+
+[ext_resource type="Texture2D" uid="uid://cd7escta77dnj" path="res://Assets/Player/Placeholder.png" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(12, 16)
+
+[node name="Player" type="CharacterBody2D"]
+safe_margin = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cvnsp")
+debug_color = Color(0.724951, 0.451886, 0.418287, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v0iea")
