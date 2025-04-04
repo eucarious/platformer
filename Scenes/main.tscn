@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1154gbq85ms2"]
+[gd_scene load_steps=6 format=3 uid="uid://c1154gbq85ms2"]
 
 [ext_resource type="PackedScene" uid="uid://bphx7b5en845x" path="res://Scenes/m_01_r_01.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://bib446hrkyssj" path="res://Scenes/player.tscn" id="2_8gbba"]
 [ext_resource type="Texture2D" uid="uid://o5a3gidntato" path="res://Assets/ParallaxBackgrounds/Mountain.png" id="2_bo1nx"]
+[ext_resource type="Script" uid="uid://bnj0kcnyvcmqi" path="res://Scripts/PlayerMovement.cs" id="3_kry3j"]
 [ext_resource type="Texture2D" uid="uid://cdhh117ul6e24" path="res://Assets/ParallaxBackgrounds/Sky.png" id="4_jjvhh"]
 
 [node name="Main" type="Node"]
@@ -11,6 +12,7 @@
 
 [node name="Player" parent="." instance=ExtResource("2_8gbba")]
 position = Vector2(14, 136)
+script = ExtResource("3_kry3j")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
